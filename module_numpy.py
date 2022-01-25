@@ -13,6 +13,9 @@ print(zeros.ndim) # 3 because it is a 3 dimensional array
 print(ones.shape) # (5,3,3) is the shape we specified during initialization
 print(zeros.shape) # (5,3,3) is the shape we specified during initialization
 
+# Data type of numpy array
+print(ones.dtype) # int64 because it is a 64 bit integer
+
 # arrange()
 # Returns a one-dimensional array containing numbers between two specific numbers from [start, end)
 arr = np.arange(2, 5) # [2, 3, 4]
