@@ -1,4 +1,5 @@
 # Importing
+from pstats import Stats
 import numpy as np
 
 # ones() and zeros()
@@ -55,3 +56,46 @@ arr = list(arr)
 
 # sqrt()
 np.sqrt(100) # Gives square root value
+
+# Length of NumPy arrays
+arr = np.arange(1, 25)
+len(arr) # => 24 because there are 24 numbers in the 1-D array
+arr = np.arange(1,29).reshape(4,7)
+len(arr) # => 4 because there are 4 rows in the 2-D array
+arr = np.arange(1,31).reshape(3,2,5)
+len(arr) # => 3 because there are 3 blcoks in the 3-D array
+
+# Size of NumPy arrays
+arr = np.arange(1, 25)
+arr.size() # => 24 because there are 24 elements in the 1-D array
+arr = np.arange(1,29).reshape(4,7)
+arr.size() # => 28 because there are 28 elements in the 2-D array
+arr = np.arange(1,31).reshape(3,2,5)
+arr.size() # => 30 because there are 30 elements in the 3-D array
+
+# Statistics using NumPy
+phones = np.array([1,1,1,2,2])
+stock = np.array([1,1,1,2,2])
+
+# Operations on NumPy arrays
+total = phones * stock # => [1,1,1,4,4]
+total = phones + stock # => [2,2,2,4,4]
+total = phones - stock # => [0,0,0,0,0]
+total = phones / stock # => [1,1,1,1,1]
+# Each element of the arrays will be multiplied, added, subtracted, or divided
+
+# Statistical values of NumPu arrays
+np.sum(total) # Sum of array
+np.mean(total) # Mean of array
+np.min(total) # Minimum value
+np.max(total) # Maximum value
+np.median(total) # Median value
+# There is no function for mode, but you can do
+from scipy import stats
+stats.mode(total)
+
+# More operatiosn on NumPy arrays
+import random
+radii = np.array([random.randint(1, 10) for x in range(20)])
+radii = radii ** 2
+# Raise every element to the power of 2
