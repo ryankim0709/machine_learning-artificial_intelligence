@@ -1,4 +1,4 @@
-## ** Claude Shannon's Algorithm **
+## Claude Shannon's Algorithm
 
 This algorithm is a simple mind reading algorithm. It will predict a players next move (0 or 1) based on their previous two inputs
 
