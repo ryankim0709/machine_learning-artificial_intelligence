@@ -33,3 +33,19 @@ weights = weights.sort_values(ascending=True) # => Sort in ascending order
 
 # Count entry occurences
 weights.value_counts() # => counts the number of times an element appears
+
+# Exoplanet Data
+exo_train_df = pd.read_csv("https://student-datasets-bucket.s3.ap-south-1.amazonaws.com/whitehat-ds-datasets/kepler-exoplanets-dataset/exoTrain.csv")
+
+# Checking if items in series is null
+exo_train_df.isnull() # => returns False if there are no null values
+exo_train_df.isnull().sum() # => sum of the number of null values
+
+# Columns in a series
+exo_train_df.columns # => Gives the columns in a pandas series
+
+# iloc[] function for 2-D pandas series only
+# dataframe_name.iloc[row_position_start : row_position_end, column_position_start : column_position_end]
+
+star_0 = exo_train_df.iloc[0,:]
+# Getting the first data point, then all of the data in the row
