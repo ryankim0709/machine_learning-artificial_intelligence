@@ -7,3 +7,4 @@ print(exo_train_df.shape) # => (5087, 3198)
 print(exo_test_df.shape) # => (570, 3198)
 
 print(exo_test_df["LABEL"].value_counts()) # Counts the amount of distint values in the "LABEL" column
+

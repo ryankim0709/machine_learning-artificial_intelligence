@@ -6,6 +6,9 @@ A decision tree is a **flow chart** which separates data based on sets of condit
 
 **About the Random Forest Classifier**
 <br/>
-The Random Forest Classifier has a **fit()** function which takes in two inputs. 
+The Random Forest Classifier has a **fit()** function which takes in two inputs.
+
 1. Collection of feature variables
+   - A feature variable is a set of variables we look at to determine the target
 2. Target variable
+   - A target variable is a variable we want to predict
