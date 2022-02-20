@@ -26,7 +26,7 @@ We now know that `correctly_classified = true_positive + true_negative` and that
 
 <img src="https://latex.codecogs.com/svg.image?\inline&space;f1-score&space;=&space;2\frac{precision&space;*&space;recal}{precision&space;&plus;&space;recall}&space;=&space;\frac{True&space;Positive}{True&space;Positive&space;&plus;&space;\frac{1}{2}(False&space;Positive&space;&plus;&space;False&space;negative)}" title="\inline f1-score = 2\frac{precision * recal}{precision + recall} = \frac{True Positive}{True Positive + \frac{1}{2}(False Positive + False negative)}" />
 
-\*\*F1 Score - Cumulative accuracy
+**F1 Score - Cumulative accuracy**
 
 Many people often mix up precision and F1 Score. In precision you are comparing the number of True Positives against False Positive, but in F1 Score
 you compare True Positive against the sum of False Positive **and** False Negative which incapsulates all of our data.
