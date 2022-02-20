@@ -15,7 +15,7 @@ print("Y training data", y_train)
 
 rf_clf = RandomForestClassifier(n_jobs=-1, n_estimators=50)
 rf_clf.fit(x_train, y_train) # Fitting the model
-print(rf_clf.score(x_train, y_train)) # Seeing how accurate this model is
+print(rf_clf.score(x_train, y_train)) # Seeing how accurate this model is for the training data set
 
 # Now we must make predictions using this trained model
 x_test = exo_test_df.iloc[:,1:]
