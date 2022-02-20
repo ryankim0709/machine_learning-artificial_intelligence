@@ -32,3 +32,14 @@ print(prediction.value_counts()) # See how many of each there are
 
 matrix = confusion_matrix(y_test, prediction)
 print(matrix)
+
+# Since our matrix is [[565 0], [5 0]] we know that
+# 565 are true negative => 1 => not a planet => correct &
+# 5 are false negative => 2 => planets => incorrect
+
+# Precision = True Positive/(True Positive + False Positive)
+# Recall = True Positive/(True Positive + False Negative)
+# f1-score = 2((precision * recall)/(precision + recall))
+
+# We can determine precision, recall, f1-score, and other information with this command
+print(classification_report(y_test, prediction))
