@@ -1,9 +1,9 @@
-## Data Normalisation
+## Data Normalization
 
-Data normalisation is the process of standardizing data. We do this to bring all of
+Data normalization is the process of standardizing data. We do this to bring all of
 our data to a uniform scale.
 
-Data normalisation is needed because if there is a large variance in the data, then
+Data normalization is needed because if there is a large variance in the data, then
 the AI can develop a **bias** which will yield to incorrect results.
 
 **Why?**
@@ -11,10 +11,10 @@ the AI can develop a **bias** which will yield to incorrect results.
 This is because machine learning models are **sensitive** to the **scale of data**.
 Models will give more importance to larger values which is how bias is developed.
 
-**Disclaimer! There are many types of data normalisation, but I will be exploring
-mean normalisation for the time being**
+**Disclaimer! There are many types of data normalization, but I will be exploring
+mean normalization for the time being**
 
-## Mean Normalisation
+## Mean Normalization
 
 To do this, we will follow these simple steps
 
