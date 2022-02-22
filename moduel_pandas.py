@@ -1,5 +1,8 @@
+from matplotlib.pyplot import axis
 import pandas as pd
 import random
+
+from pyparsing import col
 
 # A pandas series is a one-dimensional array which hold various data types
 
@@ -35,7 +38,7 @@ weights = weights.sort_values(ascending=True) # => Sort in ascending order
 weights.value_counts() # => counts the number of times an element appears
 
 # Exoplanet Data
-exo_train_df = pd.read_csv("https://student-datasets-bucket.s3.ap-south-1.amazonaws.com/whitehat-ds-datasets/kepler-exoplanets-dataset/exoTrain.csv")
+exo_train_df = pd.read_csv("https://student-datasets-bucket.s3.ap-south-1.amazonaws.com/--ds-datasets/kepler-exoplanets-dataset/exoTrain.csv")
 
 # Checking if items in series is null
 exo_train_df.isnull() # => returns False if there are no null values
@@ -49,3 +52,21 @@ exo_train_df.columns # => Gives the columns in a pandas series
 
 star_0 = exo_train_df.iloc[0,:]
 # Getting the first data point, then all of the data in the row
+
+# apply()
+# This function allows us to perform a function on every row or column of a pandas series.
+# The syntax is datafram.apply(function_name, axis = #)
+# If axis = 1, then it means horizantal
+# If axis = 0, then it means vertical
+
+def mean_normalise(series):
+    # We must be inputed a pandas series
+    norm_series = (series - series.mean()/(series.max() - series.min()))
+    return norm_series
+norm_train_df = exo_train_df.iloc[:,1:].apply(mean_normalise, axis=1)
+
+# insert()
+# If we want to add back a column of data to a dataframe, we can call the insert function
+# The syntax is dataframe.insert(loc = #, column = "", value=dataframe)
+
+norm_train_df.insert(loc=0, column="LABEL", value=exo_train_df["LABEL"])
