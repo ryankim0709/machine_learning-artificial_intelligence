@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Reading from CSV file
-exo_train_df = pd.read_csv("https://student-datasets-bucket.s3.ap-south-1.amazonaws.com/whitehat-ds-datasets/kepler-exoplanets-dataset/exoTrain.csv")
+exo_train_df = pd.read_csv("https://student-datasets-bucket.s3.ap-south-1.amazonaws.com/--ds-datasets/kepler-exoplanets-dataset/exoTrain.csv")
 # This will create a table of the data
 
 print(exo_train_df.shape) # => (570, 3198)

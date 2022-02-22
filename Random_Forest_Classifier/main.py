@@ -1,8 +1,8 @@
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
-exo_train_df = pd.read_csv('https://s3-student-datasets-bucket.whjr.online/whitehat-ds-datasets/kepler-exoplanets-dataset/exoTrain.csv')
-exo_test_df = pd.read_csv('https://s3-student-datasets-bucket.whjr.online/whitehat-ds-datasets/kepler-exoplanets-dataset/exoTest.csv')
+exo_train_df = pd.read_csv('https://s3-student-datasets-bucket.-.online/--ds-datasets/kepler-exoplanets-dataset/exoTrain.csv')
+exo_test_df = pd.read_csv('https://s3-student-datasets-bucket.-.online/--ds-datasets/kepler-exoplanets-dataset/exoTest.csv')
 print(exo_train_df.shape) # => (5087, 3198)
 print(exo_test_df.shape) # => (570, 3198)
 
