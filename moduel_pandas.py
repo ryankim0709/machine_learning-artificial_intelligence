@@ -70,3 +70,7 @@ norm_train_df = exo_train_df.iloc[:,1:].apply(mean_normalise, axis=1)
 # The syntax is dataframe.insert(loc = #, column = "", value=dataframe)
 
 norm_train_df.insert(loc=0, column="LABEL", value=exo_train_df["LABEL"])
+
+# T
+# This function is "transpose", it will switch the row and the column for a pandas series
+print(norm_train_df.T)
