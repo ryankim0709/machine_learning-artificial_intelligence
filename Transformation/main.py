@@ -27,3 +27,6 @@ x_axis = np.arange(3197)
 plt.figure(figsize=(10,8))
 plt.plot(x_axis, norm_train_df.iloc[0,1:])
 plt.show()
+
+frequency = 1/365.25
+frequency *= 1/24 * 1/60 * 1/60
