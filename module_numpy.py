@@ -99,3 +99,15 @@ import random
 radii = np.array([random.randint(1, 10) for x in range(20)])
 radii = radii ** 2
 # Raise every element to the power of 2
+
+# Making all elements positive
+print(np.abs(np.arange(-10, 100)) )
+# This will change all of the array items to their absolute value
+
+# Applying Fast Fourier Transormation
+print(np.fft.fft(np.arange(10, 100)))
+# This will apply the Fast Fourier Transformation to our numpy array elements
+
+# Finding the frequencies that we need for our Fast Fourier Graph
+print(np.fft.fftfreq(len(np.arange(10, 100))))
+# Creates needed frequencies for the fast fourier graph
