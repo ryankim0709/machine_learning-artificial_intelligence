@@ -66,7 +66,8 @@ for i in range(34, 36):
 
 
 norm_test_df = exo_test_df.iloc[:,1:].apply(mean_normalize, axis=1)
-norm_test_df.insert(loc=0, column="LABEL", value=exo_train_df["LABEL"]).T
+norm_test_df.insert(loc=0, column="LABEL", value=exo_train_df["LABEL"])
+norm_test_df.T
 star_test = np.abs(np.fft.fft(norm_train_df.iloc[0, 1:]))
 
 x_fft_test = norm_test_df.iloc[:,1:].T.apply(fast_fourier_transformation, axis=0).T
