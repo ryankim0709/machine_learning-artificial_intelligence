@@ -1,4 +1,4 @@
-## Confusion Matrix
+## Confusion Matrix - 17
 
 A confusion matrix is how a classification model is **generally evaluated**
 A confusion is essentially a 2 X 2 array

@@ -1,4 +1,4 @@
-## Random Forest Classifier
+## Random Forest Classifier - 17
 
 A **Random Forest Classifier** is a collection/ensemble of many decision trees.
 <br/>

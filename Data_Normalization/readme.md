@@ -1,4 +1,4 @@
-## Data Normalization
+## Data Normalization - 18
 
 Data normalization is the process of standardizing data. We do this to bring all of
 our data to a uniform scale.
