@@ -6,39 +6,37 @@ Hello! This is where I experiment with **machine learning and artificial inteleg
 The datasets in the code will not work because they are from another source. I am sorry for the inconvenience.
 
 # Libraries that have been used
-**Confusion Matrix**
-import pandas as pd
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import confusion_matrix, classification_report
 
+17
 
-**Data Normalization**
-import pandas as pd
-import numpy as np
+- import pandas as pd
+- from sklearn.ensemble import RandomForestClassifier
+- from sklearn.metrics import confusion_matrix, classification_report
 
+19
 
-**Oversampling**
-from imblearn.over_sampling import SMOTE
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import confusion_matrix, classification_report
+- import numpy as np
+- import pandas as pd
+- import matplotlib.pyplot as plt
+- from scipy.fft import fft
 
+18
 
-**Random Forest Classifier**
-import pandas as pd
-from sklearn.ensemble import RandomForestClassifier
+- import pandas as pd
+- import numpy as np
 
+20
 
-**Transformation**
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-from scipy.fft import fft
+- import numpy as np
+- import pandas as pd
+- from imblearn.over_sampling import SMOTE
+- from sklearn.ensemble import RandomForestClassifier
+- from sklearn.metrics import confusion_matrix, classification_report
+- import xgboost as xg
 
+21
 
-**XGBoost**
-import pandas as pd
-import numpy as np
-from imblearn.over_sampling import SMOTE
-import xgboost as xg
-from sklearn.metrics import confusion_matrix, classification_report
-
+- import numpy as np
+- import pandas as pd
+- import matplotlib.pyplot as plt
+- import seaborn as sns
