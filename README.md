@@ -7,25 +7,25 @@ The datasets in the code will not work because they are from another source. I a
 
 # Libraries that have been used
 
-17
+17 ~ Confusion Matrix/Random Forest Classifier
 
 - import pandas as pd
 - from sklearn.ensemble import RandomForestClassifier
 - from sklearn.metrics import confusion_matrix, classification_report
 
-19
+18 ~ Data Normilization
+
+- import pandas as pd
+- import numpy as np
+
+19 ~ Transformation
 
 - import numpy as np
 - import pandas as pd
 - import matplotlib.pyplot as plt
 - from scipy.fft import fft
 
-18
-
-- import pandas as pd
-- import numpy as np
-
-20
+20 ~ Oversampling
 
 - import numpy as np
 - import pandas as pd
@@ -34,7 +34,7 @@ The datasets in the code will not work because they are from another source. I a
 - from sklearn.metrics import confusion_matrix, classification_report
 - import xgboost as xg
 
-21
+21 ~ Box Plot
 
 - import numpy as np
 - import pandas as pd
