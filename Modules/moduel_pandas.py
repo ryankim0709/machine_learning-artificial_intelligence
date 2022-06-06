@@ -1,8 +1,8 @@
+# 13, 14, & 15
+
 from matplotlib.pyplot import axis
 import pandas as pd
 import random
-
-from pyparsing import col
 
 # A pandas series is a one-dimensional array which hold various data types
 

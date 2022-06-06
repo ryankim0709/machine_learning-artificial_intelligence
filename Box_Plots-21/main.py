@@ -14,3 +14,8 @@ sns.boxplot(met_df["year"])
 plt.figure(figsize=(20,2))
 sns.boxplot(met_df["mass"])
 
+lst = [3,9,6,10,7,8,7,6,1]
+lst = pd.Series(lst)
+print(lst.describe()) # Print info such as mean, median ..
+plt.figure(figsize=(20,2))
+sns.boxplot(lst)
